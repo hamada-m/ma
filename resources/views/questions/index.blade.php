@@ -30,7 +30,12 @@
                                 </div>
                               </div>
                           <div class="media-body">
-                              <h3 class="mt-0"><a href="{{$question->url}}">{{$question->title}}</a></h3>
+                              <div class="d-flex align-items-center">
+                                 <h3 class="mt-0"><a href="{{$question->url}}">{{$question->title}}</a></h3>
+                                 <div class="ml-auto">
+                                    <a href="{{route('questions.edit',$question->id)}}" class="btn btn-sm btn-outline-info">Edit</a>
+                                 </div>
+                              </div>
                                <p class="lead">
                                  Asked by
                                  <a href="{{$question->user->url}}">{{$question->user->name}}</a>
@@ -44,11 +49,11 @@
         
                      <nav aria-label="Page navigation example">
                        <ul class="pagination justify-content-center">
-                            <li class="page-item"><a class="page-link" href="{{$questions->links()}}">Previous</a></li>
-                            <li class="page-item"><a class="page-link" href="{{$questions->links()}}">1</a></li>
-                            <li class="page-item"><a class="page-link" href="{{$questions->links()}}">2</a></li>
-                            <li class="page-item"><a class="page-link" href="{{$questions->links()}}">3</a></li>
-                            <li class="page-item"><a class="page-link" href="{{$questions->links()}}">Next</a></li>
+                            <li class="page-item"><a class="page-link" href="">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="">1</a></li>
+                            <li class="page-item"><a class="page-link" href="">2</a></li>
+                            <li class="page-item"><a class="page-link" href="">3</a></li>
+                            <li class="page-item"><a class="page-link" href="">Next</a></li>
                        </ul>
                      </nav>
                 </div>
