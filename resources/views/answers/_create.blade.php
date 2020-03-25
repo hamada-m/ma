@@ -17,7 +17,7 @@
                         @endif
                     </div>
                      <div class="form-group">                    
-                         <button type="submit" class="btn btn-lg btn-outline-primary">Entrer</button>
+                         <button type="submit" class="btn btn-lg btn-outline-primary">Submit</button>
                      </div>     
                 </form>
             </div>
